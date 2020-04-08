@@ -11,7 +11,7 @@
                 response.text().then(function(text) {
                     let obj = JSON.parse(text);
                     document.getElementById("vystup").innerHTML =
-                        "Dnes je " + obj.denVTydnu + obj.den + obj.mesice + " " + obj.rok + " a svátek má " + obj.svatek;
+                        "Dnes je " + obj.denVTydnu + ". " + obj.den + " " + obj.mesice + " " + obj.rok + " a svátek má " + obj.svatek;
                 });
             });
         }

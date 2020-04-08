@@ -26,7 +26,7 @@ define ("MESICE", ["Ledna","Února","Března","Dubna","Května","června","Červ
 
 $data = array();
 $data["den"] = Date("j");
-$data["mesice"] = MESICE[Date("m")];
+$data["mesice"] = MESICE[Date("m") -1];
 $data["rok"] = Date("Y");
 $data["denVTydnu"] = DNY_V_TYDNU[Date("N")];
 $data["svatek"] = SVATKY[Date("m")-1][Date("j")];
